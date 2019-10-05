@@ -34,3 +34,8 @@ Route::get('/contact', function(){
 Route::get('/typography', function(){
     return view ('typography');
 });
+
+Route::get('/test', function(){
+    $result=factory(\App\Category::class, 10)->create();
+    dd($result);
+});
