@@ -14,6 +14,7 @@ class DropSlug extends Migration
     public function up()
     {
         Schema::table('posts', function(Blueprint $table){
+            $table->dropColumn('slug');
             $table->dropColumn('status');
         });
     }

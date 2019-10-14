@@ -12,7 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view ('index');
+    $posts=\App\Post::latest()->paginate(5);
+
+
+    return view ('index',[
+        'posts'=>$posts
+    ]);
 });
 
 Route::get('/post', function(){

@@ -4,8 +4,9 @@
   <!-- ##### Hero Area Start ##### -->
 <section class="hero-area">
     <div class="hero-post-slides owl-carousel">
-
+      
         <!-- Single Hero Post -->
+       
         <div class="single-hero-post">
             <!-- Post Image -->
             <div class="slide-img bg-img" style="background-image: url(img/blog-img/2.jpg);"></div>
@@ -17,7 +18,6 @@
                 </a>
             </div>
         </div>
-
         <!-- Single Hero Post -->
         <div class="single-hero-post">
             <!-- Post Image -->
@@ -246,30 +246,31 @@
                 <div class="blog-posts-area">
 
                     <!-- Single Blog Post -->
+                    @foreach($posts as $post)
                     <div class="single-blog-post d-flex flex-wrap mt-50">
                         <!-- Thumbnail -->
                         <div class="post-thumbnail mb-50">
-                            <a href="#"><img src="img/blog-img/8.jpg" alt=""></a>
+                        <a href="#"><img src="img/blog-img/{{$post->pre_image}}" alt=""></a>
                         </div>
                         <!-- Content -->
                         <div class="post-content mb-50">
-                            <p class="post-date">MAY 8, 2018 / foody</p>
+                        <p class="post-date">{{$post->created_at->format('F d, Y')}} / {{$post->category->name}}</p>
                             <a href="#" class="post-title">
-                                <h4>Vegetarian Spring Pho with Sweet Potato Noodles and Heirloom Beans</h4>
+                                <h4>{{$post->title}}</h4>
                             </a>
                             <div class="post-meta">
-                                <a href="#"><span>by</span> Sarah Jenks</a>
-                                <a href="#"><i class="fa fa-eye"></i> 192</a>
+                                <a href="#"><span>by</span> {{$post->user->name}}</a>
+                                <a href="#"><i class="fa fa-eye"></i> {{$post->views}}</a>
                                 <a href="#"><i class="fa fa-comments"></i> 08</a>
                             </div>
-                            <p class="post-excerpt">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+                            <p class="post-excerpt">{{$post->pre_text}}</p>
                             <a href="#" class="read-more-btn">Continue Reading <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <!-- Post Curve Line -->
                         <img class="post-curve-line" src="img/core-img/post-curve-line.png" alt="">
                     </div>
-
-                    <!-- Single Blog Post -->
+                    @endforeach
+                    {{-- <!-- Single Blog Post -->
                     <div class="single-blog-post d-flex flex-wrap mt-50">
                         <!-- Thumbnail -->
                         <div class="post-thumbnail mb-50">
@@ -363,14 +364,18 @@
                         </div>
                         <!-- Post Curve Line -->
                         <img class="post-curve-line" src="img/core-img/post-curve-line.png" alt="">
-                    </div>
+                    </div> --}}
 
                 </div>
 
                 <!-- Pager -->
                 <ol class="foode-pager mt-50">
-                    <li><a href="#"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Newer</a></li>
-                    <li><a href="#">Older <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+                    @if ($posts->currentPage()!=1)
+                        <li><a href="{{$posts->previousPageUrl()}}"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Newer</a></li>
+                    @endif
+                    @if($posts->currentPage() < $posts->lastPage())
+                        <li><a href="{{$posts->nextPageUrl()}}">Older <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+                    @endif
                 </ol>
             </div>
         {{-- </div> --}}
