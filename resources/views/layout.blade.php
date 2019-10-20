@@ -12,17 +12,17 @@
     <title>Foode - Food Blog HTML5 Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="/img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
 </head>
 <body>
  <!-- ##### Preloader ##### -->
  <div class="preloader d-flex align-items-center justify-content-center">
         <div class="circle-preloader">
-            <img src="img/core-img/logo.png" alt="">
+            <img src="/img/core-img/logo.png" alt="">
             <div class="foode-preloader">
                 <span></span>
             </div>
@@ -66,7 +66,7 @@
                 <div class="row">
                     <div class="col-12">
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="/img/core-img/logo.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                     <nav class="classy-navbar" id="foodeNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="/img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -113,7 +113,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <img src="img/core-img/breadcrumb-line.png" alt="">
+                    <img src="/img/core-img/breadcrumb-line.png" alt="">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
@@ -156,37 +156,37 @@
                     <div class="instagram-slides owl-carousel">
                         <!-- Single Instagram Slide -->
                         <div class="single-instagram-slide">
-                            <img src="img/blog-img/insta1.jpg" alt="">
+                            <img src="/img/blog-img/insta1.jpg" alt="">
                             <a href="#"><i class="fa fa-instagram"></i>Follow Me</a>
                         </div>
 
                         <!-- Single Instagram Slide -->
                         <div class="single-instagram-slide">
-                            <img src="img/blog-img/insta2.jpg" alt="">
+                            <img src="/img/blog-img/insta2.jpg" alt="">
                             <a href="#"><i class="fa fa-instagram"></i>Follow Me</a>
                         </div>
 
                         <!-- Single Instagram Slide -->
                         <div class="single-instagram-slide">
-                            <img src="img/blog-img/insta3.jpg" alt="">
+                            <img src="/img/blog-img/insta3.jpg" alt="">
                             <a href="#"><i class="fa fa-instagram"></i>Follow Me</a>
                         </div>
 
                         <!-- Single Instagram Slide -->
                         <div class="single-instagram-slide">
-                            <img src="img/blog-img/insta4.jpg" alt="">
+                            <img src="/img/blog-img/insta4.jpg" alt="">
                             <a href="#"><i class="fa fa-instagram"></i>Follow Me</a>
                         </div>
 
                         <!-- Single Instagram Slide -->
                         <div class="single-instagram-slide">
-                            <img src="img/blog-img/insta5.jpg" alt="">
+                            <img src="/img/blog-img/insta5.jpg" alt="">
                             <a href="#"><i class="fa fa-instagram"></i>Follow Me</a>
                         </div>
 
                         <!-- Single Instagram Slide -->
                         <div class="single-instagram-slide">
-                            <img src="img/blog-img/insta6.jpg" alt="">
+                            <img src="/img/blog-img/insta6.jpg" alt="">
                             <a href="#"><i class="fa fa-instagram"></i>Follow Me</a>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
             <div class="row">
                 <div class="col-12">
                     <!-- Footer Curve Line -->
-                    <img class="footer-curve" src="img/core-img/foo-curve.png" alt="">
+                    <img class="footer-curve" src="/img/core-img/foo-curve.png" alt="">
                     <!-- Footer Social Info -->
                     <div class="footer-social-info d-flex align-items-center justify-content-between">
                         <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
@@ -214,7 +214,7 @@
                         <a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a>
                     </div>
                     <!-- Footer Curve Line -->
-                    <img class="footer-curve" src="img/core-img/foo-curve.png" alt="">
+                    <img class="footer-curve" src="/img/core-img/foo-curve.png" alt="">
                 </div>
             </div>
 
@@ -235,14 +235,14 @@
 
      <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="/js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="/js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
-    <script src="js/plugins/plugins.js"></script>
+    <script src="/js/plugins/plugins.js"></script>
     <!-- Active js -->
-    <script src="js/active.js"></script>
+    <script src="/js/active.js"></script>
 </body>
 </html>
